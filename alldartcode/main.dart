@@ -1,7 +1,7 @@
 void numFunc() {
   // Most if not all number related functions.
-  // assumes x = 10 as the common value fpr all code in this gist.
-  int x = 10;
+  // assumes x = -10 as the common value fpr all code in this gist.
+  int x = -10;
   // bitlength: number of bits required to store the value as:
 
   // 1.a unsigned value:
@@ -28,6 +28,26 @@ void numFunc() {
   // 5. isNaN: Check if something is Not-a-Number
   var NaN = 2e5000000000000000;
   print("$NaN is Not a Number is a ${NaN.isNaN} statement.");
+
+  // 6. isNegative: Check if a number is negative or not.
+  bool xNeg = x.isNegative;
+  print("$x is negative is a $xNeg statement.");
+
+  // 7. isOdd: Check if odd
+  bool xOdd = x.isOdd;
+  print("$x is odd is a $xOdd statement.");
+
+  // 8. abs(): absolute value.
+  int xAbsolute = x.abs();
+  print("The absolute value of $x is $xAbsolute");
+
+  // 9. ceil()
+  num Ceil = x.ceil();
+  print("After applying $x.ceil(), the value is $Ceil");
+
+  // 10. round()
+  int Round = x.round();
+  print("$x.round = $Round");
 }
 
 int _getResult() {
